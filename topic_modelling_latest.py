@@ -159,7 +159,7 @@ print('\nPerplexity: ', lda_model.log_perplexity(corpus))  # a measure of how go
 # Visualize the topics: 
 vis = pyLDAvis.gensim.prepare(lda_model, corpus, dictionary)
 # pyLDAvis.show(vis)
-pyLDAvis.save_html(vis, 'hehe.html')
+pyLDAvis.save_html(vis, 'pyLDAvis_diagram.html')
 
 # 1. Wordcloud of Top N words in each topic
 from matplotlib import pyplot as plt
